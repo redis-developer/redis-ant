@@ -1,2 +1,2 @@
 # redis-ant
-Redis local cache maintainer for MongoDB
+Config based automatic client-side caching using RedisJSON and MongoDB.
