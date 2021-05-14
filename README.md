@@ -1,6 +1,6 @@
 
 
-![RedisAnt Logo](https://raw.githubusercontent.com/ramantehlan/redis-ant/main/assets/logo/redisAnt.png)
+![RedisAnt Logo](https://raw.githubusercontent.com/ramantehlan/redis-ant/main/assets/image/redisAnt.png?token=AG5RGAE6SVY3MTACL6YJGQTAVAOF2)
 
 <p align="center">
  <a>
