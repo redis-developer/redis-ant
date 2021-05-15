@@ -1,0 +1,11 @@
+export GLOBAL_REDIS_URL=redis-18487.c98.us-east-1-4.ec2.cloud.redislabs.com:18487
+export GLOBAL_REDIS_PASS=BRXcMjvfOYVjlFFacZWmVppTe0O85Vup
+export GLOBAL_REDIS_PORT=18487
+
+export MONGO_URI=redis-ant.sv360.mongodb.net
+export MONGO_USER=root
+export MONGO_PASS=pGVP015jh3sCVGqH
+
+export CLIENT_REDIS_URL=localhost:6379
+export CLIENT_REDIS_PASS=
+export CLIENT_REDIS_PORT=6379

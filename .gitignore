@@ -5,7 +5,6 @@
 *.so
 *.dylib
 *.log
-env
 
 # Output directory
 *__pycache__*

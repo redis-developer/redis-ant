@@ -87,8 +87,69 @@ $ make setup
 
 ### Build
 
-### Deploy
+> If you are testing it during the hackathon, you can directly jump to the step 4
 
+**Step 1: Start Redis Enterprise Cloud and MongoDB**
+
+**Step 2: Create a `env` file and add following details to it**
+
+```
+export GLOBAL_REDIS_URL=
+export GLOBAL_REDIS_PASS=
+export GLOBAL_REDIS_PORT=
+
+export MONGO_URI=
+export MONGO_USER=
+export MONGO_PASS=
+
+export CLIENT_REDIS_URL=localhost:6379
+export CLIENT_REDIS_PASS=
+export CLIENT_REDIS_PORT=6379
+```
+
+
+**Step 3: Define `ant_source.yml` file**
+
+```
+database: "users"
+collection: "devices"
+key_field: "user_id"
+```
+
+> Make sure the database and collection actually exist.
+
+**Step 4: Start the client-side cache**
+
+```
+$ make run-client-redis
+
+or if you don't have make
+
+$ docker run --rm -p 6379:6379 --name redis-redisjson redislabs/rejson:latest
+```
+
+**Step 5: Start the RedisAnt-Server**
+
+```
+$ make deploy-server
+
+or
+
+$ source env
+$ ./bin/redis-ant-server
+```
+
+**Step 6: Start the RedisAnt-Client**
+
+```
+$ make deploy-client
+
+or
+
+$ source env
+$ ./bin/redis-ant-client
+
+```
 
 # FAQ
 
