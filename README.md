@@ -61,7 +61,7 @@ key_field: "user_id"
 # Demo
 ![Demo](https://raw.githubusercontent.com/ramantehlan/redis-ant/main/assets/image/demo.gif)
 
-> https://www.youtube.com/watch?v=2KPHvtH9ukY
+Above is the complete demo. To understand the working, you can see this [video](https://www.youtube.com/watch?v=2KPHvtH9ukY)
 
 # Usage
 
