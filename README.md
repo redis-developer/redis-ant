@@ -16,11 +16,11 @@ RedisAnt maintains your client-side cache end-to-end at the speed of light. It c
 - [About](#about)
   - [RedisAnt Server](#redisant-server)
   - [RedisAnt Client](#redisant-client)
+- [Demo](#demo)
 - [Usage](#usage)
   - [Pre-Requisites](#pre-requisites)
   - [Development Environment](#development-environment)
   - [Build](#build)
-  - [Deploy](#deploy)
 - [FAQ](#faq)
 - [Acknowledgment](#acknowledgment)
 - [License](#license)
@@ -56,8 +56,12 @@ key_field: "user_id"
 
 
 
-
 ![RedisAnt Diagram](https://raw.githubusercontent.com/ramantehlan/redis-ant/main/assets/image/technical-diagram.png)
+
+# Demo
+![Demo](https://raw.githubusercontent.com/ramantehlan/redis-ant/main/assets/image/demo.gif)
+
+> https://www.youtube.com/watch?v=2KPHvtH9ukY
 
 # Usage
 
