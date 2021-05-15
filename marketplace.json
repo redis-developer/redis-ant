@@ -1,0 +1,24 @@
+{
+    "app_name": "RedisAnt",
+    "description": "Automatic client-side caching using RedisJSON and MongoDB.",
+    "hidden": "true",
+    "rank": "21",
+    "type": "Building Block",
+    "contributed_by": "Community",
+    "repo_url": "https://github.com/ramantehlan/redis-ant",
+    "download_url": "https://github.com/ramantehlan/redis-ant",
+    "hosted_url": "https://github.com/ramantehlan/redis-ant",
+    "quick_deploy": "false",
+    "deploy_buttons": [],
+    "language": ["Go"],
+    "redis_commands": [], 
+    "redis_features": ["caching"],
+    "redis_modules": ["RedisJson"],
+    "app_image_urls": [
+      "https://raw.githubusercontent.com/ramantehlan/redis-ant/main/assets/image/redisAnt.png"
+    ],
+    "youtube_url": "",
+    "special_tags": ["Hackathon"],
+    "verticals": [],
+    "markdown": "https://raw.githubusercontent.com/ramantehlan/redis-ant/main/README.md",
+}
