@@ -1,6 +1,6 @@
 
 
-![RedisAnt Logo](https://raw.githubusercontent.com/ramantehlan/redis-ant/main/assets/image/redisAnt.png?token=AG5RGAE6SVY3MTACL6YJGQTAVAOF2)
+![RedisAnt Logo](https://raw.githubusercontent.com/ramantehlan/redis-ant/main/assets/image/redisAnt.png)
 
 ![](https://goreportcard.com/badge/github.com/ramantehlan/redisant)
 ![](https://img.shields.io/badge/godoc-reference-green)
@@ -57,7 +57,7 @@ key_field: "user_id"
 
 
 
-![RedisAnt Diagram](https://raw.githubusercontent.com/ramantehlan/redis-ant/main/assets/image/technical-diagram.png?token=AG5RGAEZCOCQAJOBF7RHRM3AVB3WK)
+![RedisAnt Diagram](https://raw.githubusercontent.com/ramantehlan/redis-ant/main/assets/image/technical-diagram.png)
 
 # Usage
 
