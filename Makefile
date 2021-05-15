@@ -1,3 +1,5 @@
+include env
+
 .PHONY: help setup run-server run-client build install run clean
 
 help: ## Display help screen
