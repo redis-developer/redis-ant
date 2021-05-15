@@ -1,7 +1,3 @@
 database: "users"
 collection: "devices"
 key_field: "user_id"
-fields:
-  - device_id
-  - user_id
-  - consent

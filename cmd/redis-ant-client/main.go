@@ -54,6 +54,7 @@ func main() {
 	////////////////////////////
 	// Step 4: Write to client cache
 	///////////////////////////
+	fmt.Println("Data ingestion in cache starting!")
 	clientRdb := rdb.GetConnection(config.Config.ClientRedisURL, config.Config.ClientRedisPass, 0)
 	for curson.Next(ctx) {
 		var result bson.M
@@ -62,7 +63,6 @@ func main() {
 			panic(err)
 		}
 
-		fmt.Println(result)
 		keyValue := result[config.Config.KeyField]
 		jsonString, err := json.Marshal(result)
 		if err != nil {
@@ -74,10 +74,12 @@ func main() {
 			panic(err)
 		}
 	}
+	fmt.Println("Data ingestion in cache done!")
 
 	/////////////////////////////////////////
 	// Step 5: Connect with the global redis
 	/////////////////////////////////////////
+	fmt.Println("Listening to changes")
 	globalRdb := rdb.GetConnection(config.Config.GlobalRedisURL, config.Config.GlobalRedisPass, 0)
 	pubsub := globalRdb.Subscribe(ctx, "ant_updates")
 

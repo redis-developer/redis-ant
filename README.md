@@ -27,11 +27,35 @@ RedisAnt maintains your client-side cache end-to-end at the speed of light. It c
 
 # About
 
+RedisAnt makes it super easy to automate the maintenance of your local cache. You don't have to worry about the logic of adding or updating data. You just have to define the source of your data to your client, and the ants will take care of the rest.
 
+Let's understand how it works.
 
 ### RedisAnt Server
+RedisAnt-Server is responsible for connecting with MongoDB and reading the OpLogs for the collection user wants to sync. When a change is detected, it will immediately publish it to Redis Enterprise Pub/Sub. The source code for this tool can be found at `cmd/redis-ant-server`.
 
 ### RedisAnt Client
+RedisAnt-Client is responsible for
+
+Getting the initial state when the instance stars, so the service can start using it instantly.
+Listing to Global Pub/Sub for any changes. In case of any change, it will make them immediately, so the service has the access to the latest data.
+
+Both the services use the ant_source.yml file to work with the source. You need to define the source in this file.
+
+```
+# Database you want to sync
+database: "DATABASE"
+
+# Collection you want to sync
+collection: "COLLECTION"
+
+# Key field is used to hash and map the cache
+key_field: "user_id"
+```
+
+
+
+
 
 ![RedisAnt Diagram](https://raw.githubusercontent.com/ramantehlan/redis-ant/main/assets/image/technical-diagram.png?token=AG5RGAEZCOCQAJOBF7RHRM3AVB3WK)
 
