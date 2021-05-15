@@ -87,6 +87,18 @@ func main() {
 
 	for msg := range ch {
 		fmt.Println(msg.Channel, msg.Payload)
+
+		var result map[string]interface{}
+
+		json.Unmarshal([]byte(msg.Payload), &result)
+
+		_, redisErr := clientRdb.Do(ctx, "JSON.SET", result[config.Config.KeyField], ".", msg.Payload).Result()
+		if redisErr != nil {
+			panic(err)
+		}
+
+		fmt.Println("Updated local cache with above update")
+
 	}
 
 }

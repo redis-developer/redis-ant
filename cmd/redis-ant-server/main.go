@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"encoding/json"
 	"flag"
 	"fmt"
 	"reflect"
@@ -14,11 +15,14 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/options"
 
 	"github.com/ramantehlan/redis-ant/internal/config"
+	"github.com/ramantehlan/redis-ant/internal/rdb"
 )
 
 const (
 	sourceFile = "ant_source.yml"
 )
+
+var redisCtx = context.Background()
 
 func main() {
 	fmt.Println("Server is starting")
@@ -63,13 +67,27 @@ func main() {
 		OpLogDisabled: true,
 	})
 
+	////////////////////////////////////////////
+	// Step 3: Publish change to redis
+	//////////////////////////////////////////
+	globalRdb := rdb.GetConnection(config.Config.GlobalRedisURL, config.Config.GlobalRedisPass, 0)
 	for {
 		select {
 		case err := <-ctx.ErrC:
 			fmt.Printf("got err %+v", err)
 			break
 		case op := <-ctx.OpC:
-			fmt.Printf("got op %+v", op)
+
+			fmt.Printf("got op %+v", op.Data)
+			message, jErr := json.Marshal(op.Data)
+			if jErr != nil {
+				panic(err)
+			}
+
+			err := globalRdb.Publish(redisCtx, "ant_updates", message).Err()
+			if err != nil {
+				panic(err)
+			}
 			break
 		}
 	}
