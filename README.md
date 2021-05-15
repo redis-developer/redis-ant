@@ -2,8 +2,12 @@
 
 ![RedisAnt Logo](https://raw.githubusercontent.com/ramantehlan/redis-ant/main/assets/image/redisAnt.png?token=AG5RGAE6SVY3MTACL6YJGQTAVAOF2)
 
+![](https://goreportcard.com/badge/github.com/ramantehlan/redisant)
+![](https://img.shields.io/badge/godoc-reference-green)
+![](https://img.shields.io/badge/license-MIT-blue)
 
 # RedisAnt
+
 RedisAnt maintains your client-side cache end-to-end at the speed of light. It connects with your MongoDB database and automatically ingests the requested data in your local cache and keeps the cache fresh as a daisy.
 
 
@@ -15,8 +19,8 @@ RedisAnt maintains your client-side cache end-to-end at the speed of light. It c
 - [Usage](#usage)
   - [Pre-Requisites](#pre-requisites)
   - [Development Environment](#development-environment)
-  - [File Structure](#file-structure)
-  - [Commands](#commands)
+  - [Build](#build)
+  - [Deploy](#deploy)
 - [FAQ](#faq)
 - [Acknowledgment](#acknowledgment)
 - [License](#license)
@@ -47,11 +51,30 @@ Automatic client-side caching using RedisJSON and MongoDB.
 
 ### Pre-Requisites
 
+This pre-requisites are not necessarily for running the project, but if you plan to use or contribute to this project or play with the source code, knowledge of following things is recommended.
+
+- [Golang](https://golang.org/)
+- [Redis](https://redis.io/)
+
 ### Development Environment
 
-### File Structure
+To develop or build this project, make sure you have the following environment setup:
 
-### Commands
+- Install, and setup Go environment.
+- Install python.
+- Install NodeJS and yarn.
+- Install Make.
+- Clone this project in your workspace.
+
+Once you have set up the above environment, we will use make to install dependencies. Go to the root of the project and run the following command; it installs all the node modules, Python and Go dependencies.
+
+```sh
+$ make setup
+```
+
+### Build
+
+### Deploy
 
 
 # FAQ

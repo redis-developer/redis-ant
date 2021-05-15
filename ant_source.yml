@@ -1,0 +1,6 @@
+database: "users"
+collection: "devices"
+fields:
+  - device_id
+  - user_id
+  - consent
