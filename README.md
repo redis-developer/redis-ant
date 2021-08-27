@@ -1,11 +1,5 @@
 
 
-![RedisAnt Logo](https://raw.githubusercontent.com/ramantehlan/redis-ant/main/assets/image/redisAnt.png)
-
-![](https://goreportcard.com/badge/github.com/ramantehlan/redisant)
-![](https://img.shields.io/badge/godoc-reference-green)
-![](https://img.shields.io/badge/license-MIT-blue)
-
 # RedisAnt
 
 RedisAnt maintains your client-side cache end-to-end at the speed of light. It connects with your MongoDB database and automatically ingests the requested data in your local cache and keeps the cache fresh as a daisy.
