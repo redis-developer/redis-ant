@@ -7,18 +7,25 @@
     "repo_url": "https://github.com/redis-developer/redis-ant",
     "preview_image_url": "https://raw.githubusercontent.com/redis-developer/redis-ant/master/images/app_preview_image.png",
     "download_url": "https://github.com/redis-developer/redis-ant",
-    "hosted_url": "https://github.com/redis-developer/redis-ant",
+    "hosted_url": "",
     "quick_deploy": "false",
-    "deploy_buttons": [],
+    "deploy_buttons": [
+        {
+            "heroku": "https://heroku.com/deploy?template=https://github.com/redis-developer/redis-antp.git" 
+        },
+        {
+            "Google": "https://deploy.cloud.run/?git_repo=https://github.com/redis-developer/redis-ant.git" 
+        }
+    ],
     "language": ["Go"],
     "redis_commands": [], 
-    "redis_features": ["caching"],
+    "redis_features": ["Caching"],
     "redis_modules": ["RedisJSON"],
     "app_image_urls": [
       "https://raw.githubusercontent.com/redis-developer/redis-ant/main/assets/image/redisAnt.png"
     ],
     "youtube_url": "https://www.youtube.com/watch?v=NbUy614ymI8",
     "special_tags": ["Hackathon"],
-    "verticals": [],
+    "verticals": ["Others"],
     "markdown": "https://raw.githubusercontent.com/redis-developer/redis-ant/main/README.md",
 }
