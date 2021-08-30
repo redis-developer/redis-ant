@@ -1,7 +1,7 @@
 {
     "app_name": "RedisAnt",
     "description": "Automatic client-side caching using RedisJSON and MongoDB.",
-    "rank": "210",
+    "rank": 210,
     "type": "Building Block",
     "contributed_by": "Community",
     "repo_url": "https://github.com/redis-developer/redis-ant",
