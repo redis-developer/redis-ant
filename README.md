@@ -191,7 +191,7 @@ RedisAnt is aware of the database, and it communicates with it on your behalf. I
 
 - Logo is from [Flaticon](https://www.flaticon.com/free-icon/ant_809140?term=ants&page=1&position=6&page=1&position=6&related_id=809140&origin=search).
 - Redis Inc for free access to Redis Enterprise Cloud.
-- All the open-source contributors whose code was used in this project. Thank you. : )
+
 
 
 
