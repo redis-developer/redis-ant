@@ -1,6 +1,6 @@
 {
     "app_name": "RedisAnt",
-    "description": "Automatic client-side caching using RedisJSON and MongoDB.",
+    "description": "Automatic client-side caching using Redis JSON and MongoDB.",
     "rank": 210,
     "type": "Building Block",
     "contributed_by": "Community",
@@ -11,16 +11,16 @@
     "quick_deploy": "false",
     "deploy_buttons": [
         {
-            "heroku": "https://heroku.com/deploy?template=https://github.com/redis-developer/redis-antp.git" 
+            "heroku": "https://heroku.com/deploy?template=https://github.com/redis-developer/redis-antp.git"
         },
         {
-            "Google": "https://deploy.cloud.run/?git_repo=https://github.com/redis-developer/redis-ant.git" 
+            "Google": "https://deploy.cloud.run/?git_repo=https://github.com/redis-developer/redis-ant.git"
         }
     ],
     "language": ["Go"],
-    "redis_commands": [], 
-    "redis_features": ["Caching"],
-    "redis_modules": ["RedisJSON"],
+    "redis_commands": [],
+    "redis_use_cases": ["Caching"],
+    "redis_features": ["JSON"],
     "app_image_urls": [
       "https://raw.githubusercontent.com/redis-developer/redis-ant/main/assets/image/redisAnt.png"
     ],
