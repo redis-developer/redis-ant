@@ -169,12 +169,12 @@ This project should be considered a pre-alpha and a lot can be improved in it. H
 #### Why the name Redis-Ant?
 Ants are known for working in teams in sync. If one ant finds food, it very quickly transfers the location data to all the other ants. Then all the ants work together to take food from source to destination, bit by bit. I think this tool also works(at least that's what I wanted) in the same way,  hence the name RedisAnt.
 
-#### Why RedisJSON and MongoDB?
+#### Why Redis JSON and MongoDB?
 MongoDB is a no-SQL database and supports JSON document structure. It is a really popular choice for startups(enterprises too) to create their ever-evolving data structure DB.
 
-RedisJSON adds native support for storing and retrieving JSON documents at the speed of Redis.
+Redis JSON adds native support for storing and retrieving JSON documents at the speed of Redis.
 
-RedisAnt combines the power of MongoDB and RedisJSON to automate the local caching with zero overhead and high performance.
+RedisAnt combines the power of MongoDB and Redis JSON to automate the local caching with zero overhead and high performance.
 
 #### How is it different from Client Tracking feature?
 
@@ -191,7 +191,3 @@ RedisAnt is aware of the database, and it communicates with it on your behalf. I
 
 - Logo is from [Flaticon](https://www.flaticon.com/free-icon/ant_809140?term=ants&page=1&position=6&page=1&position=6&related_id=809140&origin=search).
 - Redis Inc for free access to Redis Enterprise Cloud.
-
-
-
-
